@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+}
+.profileContainer {
+  width: 80%;
+  height: fit-content;
+  border-radius: 2rem;
+  margin: 5rem auto 0 auto;
+  background-color: rgb(116, 72, 72);
+  color: #f5e1c8;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
+}
+
+.profileContainer img {
+  transform: translate(0%, -25%);
+  width: 60%;
+  height: auto !important;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+.profileContainer .myinfo {
+  margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileContainer .myinfo a {
+  margin: 0.5rem 1rem;
+  color: #fff;
+}
+
+.profileContainer .myinfo div {
+  width: fit-content;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 0.2rem solid #000;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* media query for space under image */
+@media only screen and (max-width: 500px) {
+  .profileContainer .myinfo {
+    margin-top: -2rem;
+  }
+}
+
+/* image media queries */
+@media (min-width: 714px) and (max-width: 888px) {
+  .profileContainer img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 889px) and (max-width: 1048px) {
+  .profileContainer img {
+    width: 40%;
+  }
+}
+
+/* landscape profile media queries */
+@media only screen and (min-width: 1048px) {
+  .profileContainer {
+    flex-direction: row;
+    margin: 3rem auto 0 auto;
+  }
+
+  .profileContainer img {
+    width: 40%;
+    height: auto;
+  }
+
+  .profileContainer .myinfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 0rem;
+  }
+
+  .profileContainer .myinfo div {
+    margin: 1rem;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1065px) and (max-width: 1261px) {
+  .profileContainer img {
+    transform: translate(-1%, -180px);
+  }
+}
+
+@media (min-width: 1048px) and (max-width: 1064px) {
+  .profileContainer img {
+    transform: translate(-1%, -234px);
+  }
+}
